@@ -3,76 +3,86 @@ Primary color (dark orange red): #D3542E
 Secondary color (dark gray):#333333
                 (white): #FFFFFF
 */
-
+/*padding: 10px 5px;
+    Adds a 10px inner spacing to top & bottom and 5px to left and right
+  margin: 10px;
+    Adds a 10px outer spacing to all sides*/
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
   line-height: 1.6;
   /*Sets the line-height to 1.6*/
+  font-weight: 400;
+  font-color:#333;
 }
 
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-a{
-  color:#D3542E
+h1 {
+  font-size: 30px;
+  font-weight: 700;
 }
 
-div{
-  padding: 10px 5px;
-  /*Adds a 10px inner spacing to top & bottom and 5px to left and right */
-  margin: 10px;
-  /*Adds a 10px outer spacing to all sides*/
+h2 {
+  font-size: 24px;
+  font-weight: 700;
 }
 
-a:hover, a:focus{
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  color: #D3542E;
+  text-decoration: none;
+}
+
+a:visited {
+  /* visited link */
+  color: #D3542E;
+}
+
+a:hover, a:focus {
+  color: #3366BB;
   text-decoration: none;
   /* No underlining when hovering navigating via mouse or keyboard */
 }
 
-a:visited{
-  /* visited link */
-  color: #551A8B
-}
-
-a:active{
+a:active {
   /* selected link */
-  color: #3366BB
+  color: #3366BB;
 }
 
-button{
-  */overwrite browser defaults */
+.button {
+  /*overwrite browser defaults */
   border: none;
   /* reset the border */
   font-family: inherit;
   /*takes the font from the outer container */
-
-/* style button */
-background-color: #333333;
-color:#FFFFFF !important;
-text-decoration: none;
-padding: 10px;
-border-radius: 3px;
-/*width of the border, type, & color*/
-transition: 0.2s opacity;
+  /* style button */
+  background-color: #333333;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px;
+  /*width of the border, type, & color*/
+  transition: 0.2s background-color;
 }
 
-button:hover, button:focus{
-  cursor: pointer;
-  /*lets the mouse appear as hand when hovering over the button*/
-  opacity: 0.8;
+.button:hover, .button:focus {
+  /*cursor: pointer; lets the mouse appear as hand when hovering over the button; in this case, line 71 is not needed because within my button is a hyperlink that includes the hand as a default feature*/
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #FFF;
   /*Reduces the opacity of the button to 80%*/
 }
 
-.button-secondary{background-color: #90d5ec;
+.button-secondary {
+  background-color: #90d5ec;
+}
+
+
+img{
+  width:100%;
 }
