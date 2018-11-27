@@ -7,9 +7,14 @@ Secondary color (dark gray):#333333
     Adds a 10px inner spacing to top & bottom and 5px to left and right
   margin: 10px;
     Adds a 10px outer spacing to all sides*/
+
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   /* Sets the font size to 16px */
   line-height: 1.6;
   /*Sets the line-height to 1.6*/
@@ -20,6 +25,7 @@ body {
 h1 {
   font-size: 30px;
   font-weight: 700;
+  text-align: center; /*Centers text*/
 }
 
 h2 {
@@ -85,4 +91,71 @@ a:active {
 
 img{
   width:100%;
+  /* sets image to 100% width of its parent element.  Parent element examples: header, columns, etc.*/
+}
+
+/* Layout stylying*/
+.wrapper{
+  /* don't want "width: 100%" under "wrapper"*/
+  max-width: 1200px;
+  margin: 0 auto;
+  /*No spacing to top and bottom and auto spacing to left and right.  "Auto" automatically calculates left and right based on screen size.  "Auto only applies to margin and only to "left and right.*/
+  padding: 0 20px;
+}
+
+.column-2 {
+  width: 49%;
+  display: inline-block;
+  margin-right: 2%;
+  text-align: center; /*Centers text*/
+  float: left;
+}
+
+.column-2:last-child{
+  margin-right: 0;
+}
+
+header{
+  padding: 10px 0;
+}
+
+nav{
+  float: right;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.logo{
+  width: 6em;
+}
+
+.social_icon {
+  width: 3em;
+}
+
+@media all and (max-width: 767px) {
+ body{
+   font-size: 16px;
+ }
+
+  h1{
+    /*Reduce font-size of heading*/
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .column-2 {
+    /*Modify 2-column to 1-column*/
+    width: 100%;
+    margin-right: 0;
+  }
 }
