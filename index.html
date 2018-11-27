@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ted Chu - UX/UI Designer - San Diego, CA</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
@@ -31,7 +32,8 @@
 
 <body>
   <header>
-    <img src="img/logo_cropped.png" alt="Logo">
+    <div class="wrapper">
+    <img src="img/logo_cropped.png" alt="Logo" class="logo">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -39,19 +41,22 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
-  <h1>Hi, my name is Ted! I'm a UX/UI Designer based in San Diego, CA</h1>
-  <div>
-    <div>
+<main>
+  <div class="wrapper">
+  <h1 class>Hi, my name is Ted! I'm a UX/UI Designer based in San Diego, CA</h1>
+    <div class=column-2>
       <img src="img/Scuba_Cover.jpeg" alt="Scuba Diving App">
       <h2>SCUBA</h2>
     </div>
-    <div>
+    <div class="column-2">
       <img src="img/WordMap_Cover.jpeg" alt="WordMap Vocabulary App">
       <h2>Wordmap</h2>
     </div>
   </div>
+</main>
 
 </body>
 
