@@ -26,6 +26,7 @@ h1 {
   font-size: 30px;
   font-weight: 700;
   text-align: center; /*Centers text*/
+  margin-top: 100px;
 }
 
 h2 {
@@ -155,7 +156,7 @@ nav li {
 }
 
 .logo{
-  width: 6em;
+  width: 4em;
 }
 
 .social_icon {
@@ -171,14 +172,27 @@ svg.beach{
 }
 
 @media all and (max-width: 767px) {
- body{
+
+  nav{
+    float: right;
+    margin-top: 10px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  body{
    font-size: 16px;
- }
+  }
 
   h1{
     /*Reduce font-size of heading*/
     font-size: 24px;
-    text-align: left;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .column-2 {
@@ -188,6 +202,41 @@ svg.beach{
   }
 }
 
+@media all and (max-width: 568px) {
+
+  nav{
+    float: right;
+    margin-top: 10px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  body{
+   font-size: 16px;
+  }
+
+  h1{
+    /*Reduce font-size of heading*/
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .column-2 {
+    /*Modify 2-column to 1-column*/
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+}
+
+
+/* ANIMATION */
 @keyframes color-change{
   0% {fill: #ffe85f;}
   50% {fill: #ffc200;}
@@ -213,32 +262,4 @@ svg.beach{
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
-}
-
-
-/* Highlight text in  */
-nav .highlightTextIn li a:before
-{
-    position: absolute;
-    color: rgba(211, 84, 46, 0.4);
-    top: 0px;
-    left: 0px;
-    padding: 10px;
-    overflow: hidden;
-    content: attr(alt);
-    transition: all 0.3s;
-    transform: scale(0.8);
-    opacity: 0;
-}
-
-nav .highlightTextIn li a:hover:before
-{
-   transform: scale(1);
-   opacity: 1;
-}
-
-
-nav .highlightTextIn li a:before
-{
-    transform: scale(1.2);
 }
