@@ -130,6 +130,10 @@ img{
   margin-right: 0;
 }
 
+.project-details{
+  display: none;
+}
+
 header{
   padding: 10px 0;
 }
