@@ -3,29 +3,33 @@ Primary color (dark orange red): #D3542E
 Secondary color (dark gray):#333333
                 (white): #FFFFFF
 */
-/*padding: 10px 5px;
+
+/* padding: 10px 5px;
     Adds a 10px inner spacing to top & bottom and 5px to left and right
   margin: 10px;
-    Adds a 10px outer spacing to all sides*/
-
-*{
+    Adds a 10px outer spacing to all sides */
+* {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+
   /* Sets the font size to 16px */
   line-height: 1.6;
-  /*Sets the line-height to 1.6*/
+
+  /* Sets the line-height to 1.6 */
   font-weight: 400;
-  font-color:#333;
+  color: #333;
 }
 
 h1 {
   font-size: 30px;
   font-weight: 700;
-  text-align: center; /*Centers text*/
+  text-align: center;
+
+  /* Centers text */
   margin-top: 100px;
 }
 
@@ -40,62 +44,71 @@ h3 {
 }
 
 a {
-  color: #D3542E;
+  color: #d3542e;
   text-decoration: none;
 }
 
 a:visited {
   /* visited link */
-  color: #D3542E;
-  /* keep visited color same as default color for privacy*/
+  color: #e3542e;
+
+  /* keep visited color same as default color for privacy */
 }
 
-a:hover, a:focus {
-  color: #3366BB;
+a:hover,
+a:focus {
+  color: #36b;
   text-decoration: none;
+
   /* No underlining when hovering navigating via mouse or keyboard */
 }
 
 a:active {
   /* selected link */
-  color: #3366BB;
+  color: #36b;
 }
 
 .button {
-  /*overwrite browser defaults */
+  /* overwrite browser defaults */
   border: none;
+
   /* reset the border */
   font-family: inherit;
-  /*takes the font from the outer container */
+
+  /* takes the font from the outer container */
+
   /* style button */
-  background-color: #333333;
-  color: #FFFFFF;
+  background-color: #333;
+  color: #fff;
   text-decoration: none;
   display: inline-block;
   margin: 50px 0;
   padding: 10px;
   border-radius: 3px;
-  /*width of the border, type, & color*/
+
+  /* width of the border, type, & color */
   transition: 1s background-color;
-  transition: transform .2s;
-  -webkit-box-shadow: 4px 4px 12px 0px rgba(51,51,51,0.55);
--moz-box-shadow: 4px 4px 12px 0px rgba(51,51,51,0.55);
-box-shadow: 4px 4px 12px 0px rgba(51,51,51,0.55);
+  transition: transform 0.2s;
+  -webkit-box-shadow: 4px 4px 12px 0 rgba(51, 51, 51, 0.55);
+  -moz-box-shadow: 4px 4px 12px 0 rgba(51, 51, 51, 0.55);
+  box-shadow: 4px 4px 12px 0 rgba(51, 51, 51, 0.55);
 }
 
-.button:visited{
-  color: #FFF;
+.button:visited {
+  color: #fff;
 }
 
-.button:hover, .button:focus {
-  /*cursor: pointer; lets the mouse appear as hand when hovering over the button; in this case, line 71 is not needed because within my button is a hyperlink that includes the hand as a default feature*/
+.button:hover,
+.button:focus {
+  /* cursor: pointer; lets the mouse appear as hand when hovering over the button; in this case, line 71 is not needed because within my button is a hyperlink that includes the hand as a default feature */
   background-color: rgba(51, 51, 51, 0.8);
-  color: #FFF;
+  color: #fff;
   transform: scale(1.2);
-  /*Reduces the opacity of the button to 80%*/
+
+  /* Reduces the opacity of the button to 80% */
 }
 
-.center{
+.center {
   text-align: center;
 }
 
@@ -103,18 +116,19 @@ box-shadow: 4px 4px 12px 0px rgba(51,51,51,0.55);
   background-color: #90d5ec;
 }
 
+img {
+  width: 100%;
 
-img{
-  width:100%;
-  /* sets image to 100% width of its parent element.  Parent element examples: header, columns, etc.*/
+  /* sets image to 100% width of its parent element.  Parent element examples: header, columns, etc. */
 }
 
-/* Layout stylying*/
-.wrapper{
-  /* don't want "width: 100%" under "wrapper"*/
+/* Layout stylying */
+.wrapper {
+  /* don't want "width: 100%" under "wrapper" */
   max-width: 1200px;
   margin: 0 auto;
-  /*No spacing to top and bottom and auto spacing to left and right.  "Auto" automatically calculates left and right based on screen size.  "Auto only applies to margin and only to "left and right.*/
+
+  /* No spacing to top and bottom and auto spacing to left and right.  "Auto" automatically calculates left and right based on screen size.  "Auto only applies to margin and only to "left and right. */
   padding: 0 20px;
 }
 
@@ -122,38 +136,42 @@ img{
   width: 49%;
   display: inline-block;
   margin-right: 2%;
-  text-align: center; /*Centers text*/
+  text-align: center;
+
+  /* Centers text */
   float: left;
 }
 
-.column-2:last-child{
+.column-2:last-child {
   margin-right: 0;
 }
 
-.project{
+.project {
   position: relative;
   line-height: 0;
 }
 
-.project-details{
+.project-details {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  margin: 0; /*Reset this to 0*/
+  margin: 0;
+
+  /* Reset this to 0 */
   padding: 25% 10px;
   background: rgba(5, 103, 110, 9.5);
   line-height: 1.4;
   color: white;
 }
 
-header{
+header {
   padding: 10px 0;
 }
 
-nav{
+nav {
   float: right;
   margin-top: 20px;
 }
@@ -168,13 +186,13 @@ nav li {
   margin-left: 30px;
 }
 
-.active{
+.active {
   padding-bottom: 10px;
-  border-bottom: 5px solid #D3542E;
-  border-radius: 3px
+  border-bottom: 5px solid #d3542e;
+  border-radius: 3px;
 }
 
-.logo{
+.logo {
   width: 4em;
 }
 
@@ -182,17 +200,16 @@ nav li {
   width: 3em;
 }
 
-.beach{
+.beach {
   max-width: 100%;
 }
 
-svg.beach{
+svg.beach {
   border-radius: 10px;
 }
 
 @media all and (max-width: 767px) {
-
-  nav{
+  nav {
     float: right;
     margin-top: 10px;
   }
@@ -203,27 +220,26 @@ svg.beach{
     margin-right: 10px;
   }
 
-  body{
-   font-size: 16px;
+  body {
+    font-size: 16px;
   }
 
-  h1{
-    /*Reduce font-size of heading*/
+  h1 {
+    /* Reduce font-size of heading */
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
   }
 
   .column-2 {
-    /*Modify 2-column to 1-column*/
+    /* Modify 2-column to 1-column */
     width: 100%;
     margin-right: 0;
   }
 }
 
 @media all and (max-width: 568px) {
-
-  nav{
+  nav {
     float: right;
     margin-top: 10px;
   }
@@ -234,40 +250,50 @@ svg.beach{
     margin-right: 5px;
   }
 
-  body{
-   font-size: 16px;
+  body {
+    font-size: 16px;
   }
 
-  h1{
-    /*Reduce font-size of heading*/
+  h1 {
+    /* Reduce font-size of heading */
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
   }
 
   .column-2 {
-    /*Modify 2-column to 1-column*/
+    /* Modify 2-column to 1-column */
     width: 100%;
     margin-right: 0;
   }
 }
 
-}
-
-
 /* ANIMATION */
-@keyframes color-change{
-  0% {fill: #ffe85f;}
-  50% {fill: #ffc200;}
-  100%{fill:#ff7800;}
+@keyframes color-change {
+  0% {
+    fill: #ffe85f;
+  }
+
+  50% {
+    fill: #ffc200;
+  }
+
+  100% {
+    fill: #ff7800;
+  }
 }
 
-@keyframes move-right{
-  from{transform: translate(0,50px);}
-  to{transform: translate(200px,50px);}
+@keyframes move-right {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
-.sun{
+.sun {
   animation-duration: 2s;
   animation-name: color-change;
   animation-iteration-count: infinite;
@@ -275,7 +301,7 @@ svg.beach{
   animation-timing-function: linear;
 }
 
-.cloud-left{
+.cloud-left {
   animation-duration: 10s;
   animation-name: move-right;
   animation-iteration-count: infinite;
