@@ -122,13 +122,40 @@ img {
   /* sets image to 100% width of its parent element.  Parent element examples: header, columns, etc. */
 }
 
+.intro p {
+  font-size: 1rem;
+}
 /* Layout stylying */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
 .wrapper {
   /* don't want "width: 100%" under "wrapper" */
   max-width: 1200px;
   margin: 0 auto;
 
   /* No spacing to top and bottom and auto spacing to left and right.  "Auto" automatically calculates left and right based on screen size.  "Auto only applies to margin and only to "left and right. */
+  padding: 0 20px;
+}
+
+.wrapper-photo {
+  max-width: 100px;
+}
+
+.container-box {
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.wrapper-2 {
+  max-width: 800px;
+  margin: 50px auto;
   padding: 0 20px;
 }
 
