@@ -108,7 +108,7 @@ a:active {
   /* Reduces the opacity of the button to 80% */
 }
 
-.center_1 {
+.center_2 {
   text-align: center;
 }
 
@@ -127,7 +127,7 @@ img {
 }
 /* Layout stylying */
 
-.center {
+.centerr {
   display: block;
   margin-left: auto;
   margin-right: auto;
